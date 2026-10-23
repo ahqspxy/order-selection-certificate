@@ -1,0 +1,529 @@
+{
+  "status": "PASS_NEW_REPLAY_INTERFACE_AND_REJECTION_CHECKS",
+  "scope": "Seven interface calls exercising all six unchanged engines; not a full numerical replay. Exact structural and assembly rejection checks.",
+  "actual_numeric_calls": 7,
+  "sampled_inputs": [
+    [
+      "boundary",
+      0
+    ],
+    [
+      "boundary",
+      3
+    ],
+    [
+      "atlas",
+      0
+    ],
+    [
+      "global",
+      203658
+    ],
+    [
+      "global",
+      18176
+    ],
+    [
+      "global",
+      0
+    ],
+    [
+      "global",
+      5508
+    ]
+  ],
+  "records": [
+    [
+      "boundary",
+      0,
+      "adb40520da49cd0da4f70277f408c3d80d23a03531c3f45c9ed2aa3b9a734a9f",
+      "0x1.fffe9efe96cdbp-1",
+      0.02073295900000005
+    ],
+    [
+      "boundary",
+      3,
+      "d693e49348620fd786185907bd6decead1173a029102a7bd2931f2b73ef10d33",
+      "0x1.fffe7e7964538p-1",
+      0.038417084000000656
+    ],
+    [
+      "atlas",
+      0,
+      "9155a660ee829a25655a5a07b9733df1e7939157ad86ee6fb644d8aefe0ba1bc",
+      "0x1.ffff6a3506677p-1",
+      0.0452137920000002
+    ],
+    [
+      "global",
+      203658,
+      "d2d32aa9b66a8792dff80fc1c51a21bbaf1870195e366f718b3cff65c41ea52e",
+      "0x1.ffffffff03c5fp-1",
+      0.4816482079999993
+    ],
+    [
+      "global",
+      18176,
+      "66c45e29d87e8a51b41484125a92b2f35c90d92bb8e5afe13867fd211f8561aa",
+      "0x1.ffff83fa4bee2p-1",
+      0.3432284590000023
+    ],
+    [
+      "global",
+      0,
+      "0d5c2fcb8f766e802bd1f98bc06bb8dee0a0bab5cc6c6ab2212d4523c9c30e8a",
+      "0x1.ffbd91a2c4ac1p-1",
+      0.6376189579999973
+    ],
+    [
+      "global",
+      5508,
+      "3f089de109153146a8f7f12c4ac9172f58e949b608758dd02da0dd9196c588e2",
+      "0x1.ffd829a7c0e66p-1",
+      0.24549345899999864
+    ]
+  ],
+  "engine_checks": {
+    "normalized_finite": {
+      "identity": {
+        "method": "normalized_finite",
+        "binary_sha256": "971999fb70f8067e0cbd7ffd09d38ba47475cd837aa7db5aed1685e383df879d",
+        "kernel_interval_sha256": "0662485749317a3e0b1fa132906baceb40715b681af636e3b6b7523b8b0d91a4",
+        "strict_mode_observed": true,
+        "kernel_readback_endpoints": 1632,
+        "kernel_readback_bitwise_exact": true,
+        "gamma_intervals": [
+          [
+            "6710363534854031/9007199254740992",
+            "6710363534854033/9007199254740992"
+          ],
+          [
+            "3355181767427015/4503599627370496",
+            "3355181767427017/4503599627370496"
+          ]
+        ]
+      },
+      "guards": {
+        "counts": [
+          257262,
+          25122,
+          9489,
+          90,
+          0
+        ],
+        "ranges": [
+          6.103515625e-05,
+          20.0,
+          4.293156255839596e-07,
+          0.00010280159303878996
+        ],
+        "count_order": [
+          "intervals",
+          "divisions",
+          "exponentials",
+          "square_roots",
+          "max_sqrt_steps"
+        ],
+        "range_order": [
+          "minimum_divisor",
+          "maximum_exp_argument",
+          "minimum_sqrt_argument",
+          "maximum_sqrt_argument"
+        ]
+      }
+    },
+    "normalized_dp": {
+      "identity": {
+        "method": "normalized_dp",
+        "binary_sha256": "d66f9bf7cbbfdb288eb3da5d8cbdbf057e202a2ea7f9bd2ea82db3349a373949",
+        "kernel_interval_sha256": "0662485749317a3e0b1fa132906baceb40715b681af636e3b6b7523b8b0d91a4",
+        "strict_mode_observed": true,
+        "kernel_readback_endpoints": 1632,
+        "kernel_readback_bitwise_exact": true,
+        "gamma_intervals": [
+          [
+            "6710363534854031/9007199254740992",
+            "6710363534854033/9007199254740992"
+          ],
+          [
+            "3355181767427015/4503599627370496",
+            "3355181767427017/4503599627370496"
+          ]
+        ]
+      },
+      "guards": {
+        "counts": [
+          1643071,
+          119939,
+          22058,
+          180,
+          0
+        ],
+        "ranges": [
+          6.103515625e-05,
+          20.0,
+          1.7751162972017135e-07,
+          0.00010701863580006998
+        ],
+        "count_order": [
+          "intervals",
+          "divisions",
+          "exponentials",
+          "square_roots",
+          "max_sqrt_steps"
+        ],
+        "range_order": [
+          "minimum_divisor",
+          "maximum_exp_argument",
+          "minimum_sqrt_argument",
+          "maximum_sqrt_argument"
+        ]
+      }
+    },
+    "refined_dp": {
+      "identity": {
+        "method": "refined_dp",
+        "binary_sha256": "7722efa3185da894c4ff5ec9f670f1d429bb5275811f73a032e9dd579b060120",
+        "kernel_interval_sha256": "0662485749317a3e0b1fa132906baceb40715b681af636e3b6b7523b8b0d91a4",
+        "strict_mode_observed": true,
+        "kernel_readback_endpoints": 1632,
+        "kernel_readback_bitwise_exact": true,
+        "gamma_intervals": [
+          [
+            "6710363534854031/9007199254740992",
+            "6710363534854033/9007199254740992"
+          ],
+          [
+            "3355181767427015/4503599627370496",
+            "3355181767427017/4503599627370496"
+          ]
+        ]
+      },
+      "guards": {
+        "counts": [
+          76101895,
+          5146378,
+          170196,
+          1450,
+          0
+        ],
+        "ranges": [
+          4.5776471954788135e-06,
+          20.0,
+          1.1171619185290656e-16,
+          0.009244690157107568
+        ],
+        "count_order": [
+          "intervals",
+          "divisions",
+          "exponentials",
+          "square_roots",
+          "max_sqrt_steps"
+        ],
+        "range_order": [
+          "minimum_divisor",
+          "maximum_exp_argument",
+          "minimum_sqrt_argument",
+          "maximum_sqrt_argument"
+        ]
+      }
+    },
+    "fasttight": {
+      "identity": {
+        "method": "fasttight",
+        "binary_sha256": "eab9a371d808b929789cb4681216a3a6d78da1b94c89e7c999d5ace029d095df",
+        "kernel_interval_sha256": "0662485749317a3e0b1fa132906baceb40715b681af636e3b6b7523b8b0d91a4",
+        "strict_mode_observed": true,
+        "kernel_readback_endpoints": 1632,
+        "kernel_readback_bitwise_exact": true,
+        "gamma_intervals": [
+          [
+            "6710363534854031/9007199254740992",
+            "6710363534854033/9007199254740992"
+          ],
+          [
+            "3355181767427015/4503599627370496",
+            "3355181767427017/4503599627370496"
+          ]
+        ]
+      },
+      "guards": {
+        "counts": [
+          14235621,
+          1760553,
+          150415,
+          720,
+          0
+        ],
+        "ranges": [
+          3.800262766828765e-05,
+          20.0,
+          0.000516801491133443,
+          0.08161292327285029
+        ],
+        "count_order": [
+          "intervals",
+          "divisions",
+          "exponentials",
+          "square_roots",
+          "max_sqrt_steps"
+        ],
+        "range_order": [
+          "minimum_divisor",
+          "maximum_exp_argument",
+          "minimum_sqrt_argument",
+          "maximum_sqrt_argument"
+        ]
+      }
+    },
+    "jointtight": {
+      "identity": {
+        "method": "jointtight",
+        "binary_sha256": "d722816297eda6b18c02afe4867cfe6202b7af10e87ef7d13d34f4a89612f5f1",
+        "kernel_interval_sha256": "0662485749317a3e0b1fa132906baceb40715b681af636e3b6b7523b8b0d91a4",
+        "strict_mode_observed": true,
+        "kernel_readback_endpoints": 1632,
+        "kernel_readback_bitwise_exact": true,
+        "gamma_intervals": [
+          [
+            "6710363534854031/9007199254740992",
+            "6710363534854033/9007199254740992"
+          ],
+          [
+            "3355181767427015/4503599627370496",
+            "3355181767427017/4503599627370496"
+          ]
+        ]
+      },
+      "guards": {
+        "counts": [
+          47914046,
+          5132344,
+          184935,
+          276,
+          0
+        ],
+        "ranges": [
+          0.00019614091438202583,
+          20.0,
+          8.908429549592267e-14,
+          0.863524911644086
+        ],
+        "count_order": [
+          "intervals",
+          "divisions",
+          "exponentials",
+          "square_roots",
+          "max_sqrt_steps"
+        ],
+        "range_order": [
+          "minimum_divisor",
+          "maximum_exp_argument",
+          "minimum_sqrt_argument",
+          "maximum_sqrt_argument"
+        ]
+      }
+    },
+    "jointtime": {
+      "identity": {
+        "method": "jointtime",
+        "binary_sha256": "e85503e15145d46628e172e7e3d38abaf9cb9b37b28bc8827bbf48472b069946",
+        "kernel_interval_sha256": "0662485749317a3e0b1fa132906baceb40715b681af636e3b6b7523b8b0d91a4",
+        "strict_mode_observed": true,
+        "kernel_readback_endpoints": 1632,
+        "kernel_readback_bitwise_exact": true,
+        "gamma_intervals": [
+          [
+            "6710363534854031/9007199254740992",
+            "6710363534854033/9007199254740992"
+          ],
+          [
+            "3355181767427015/4503599627370496",
+            "3355181767427017/4503599627370496"
+          ]
+        ]
+      },
+      "guards": {
+        "counts": [
+          18224047,
+          1921950,
+          83576,
+          1,
+          0
+        ],
+        "ranges": [
+          0.001999999999998891,
+          20.0,
+          1.1963763313360706e-13,
+          1.1963763313360706e-13
+        ],
+        "count_order": [
+          "intervals",
+          "divisions",
+          "exponentials",
+          "square_roots",
+          "max_sqrt_steps"
+        ],
+        "range_order": [
+          "minimum_divisor",
+          "maximum_exp_argument",
+          "minimum_sqrt_argument",
+          "maximum_sqrt_argument"
+        ]
+      }
+    }
+  },
+  "rejected_invalid_cases": [
+    "missing_face_region",
+    "duplicate_region",
+    "invalid_scale_mapping",
+    "missing_numerical_endpoint",
+    "endpoint_not_below_one",
+    "missing_global_endpoint"
+  ],
+  "builds": [
+    {
+      "command": [
+        "g++",
+        "-std=c++17",
+        "-O3",
+        "-fno-fast-math",
+        "-ffp-contract=off",
+        "-fPIC",
+        "-shared",
+        "<workspace>/outputs/order_selection_074500001_compact_certificate_20261019/source/guarded/robust_745/certification_environment.cpp",
+        "-I",
+        "<workspace>/outputs/order_selection_074500001_compact_certificate_20261019/source/guarded/robust_745",
+        "-o",
+        "<workspace>/work/compact_certificate_trial_20261019/interface_check/certification_environment.so"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.1614649160000008,
+      "source_sha256": "bbf7952ceb02d39836b72ef86d9a6212fae2ed73eae2d5fc6181f0fe60d903d9",
+      "binary_sha256": "67d673e5b714485e9d091ffa343fb27703cca448fd71832ec832f91095566b49"
+    },
+    {
+      "command": [
+        "g++",
+        "-std=c++17",
+        "-O3",
+        "-fno-fast-math",
+        "-ffp-contract=off",
+        "-fPIC",
+        "-shared",
+        "<workspace>/work/compact_certificate_trial_20261019/interface_check/normalized_dp_api.cpp",
+        "-I",
+        "<workspace>/outputs/order_selection_074500001_compact_certificate_20261019/source/guarded/robust_745",
+        "-o",
+        "<workspace>/work/compact_certificate_trial_20261019/interface_check/normalized_dp.so"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.1651385000000003,
+      "source_sha256": "26b090c5af1265d8f3c19651aea626cfab3991c869786a40eaff71751d346c0c",
+      "binary_sha256": "d66f9bf7cbbfdb288eb3da5d8cbdbf057e202a2ea7f9bd2ea82db3349a373949"
+    },
+    {
+      "command": [
+        "g++",
+        "-std=c++17",
+        "-O3",
+        "-fno-fast-math",
+        "-ffp-contract=off",
+        "-fPIC",
+        "-shared",
+        "<workspace>/work/compact_certificate_trial_20261019/interface_check/refined_dp_api.cpp",
+        "-I",
+        "<workspace>/outputs/order_selection_074500001_compact_certificate_20261019/source/guarded/robust_745",
+        "-o",
+        "<workspace>/work/compact_certificate_trial_20261019/interface_check/refined_dp.so"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.3219367499999999,
+      "source_sha256": "eb787433fb8585e6cb3ac87ba286033745233baf1ef7e110e03f9a8041bedc2b",
+      "binary_sha256": "7722efa3185da894c4ff5ec9f670f1d429bb5275811f73a032e9dd579b060120"
+    },
+    {
+      "command": [
+        "g++",
+        "-std=c++17",
+        "-O3",
+        "-fno-fast-math",
+        "-ffp-contract=off",
+        "-fPIC",
+        "-shared",
+        "-DGROUP_COUNT=4",
+        "<workspace>/work/compact_certificate_trial_20261019/interface_check/fasttight_api.cpp",
+        "-I",
+        "<workspace>/outputs/order_selection_074500001_compact_certificate_20261019/source/guarded/robust_745",
+        "-o",
+        "<workspace>/work/compact_certificate_trial_20261019/interface_check/fasttight.so"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.9604537089999994,
+      "source_sha256": "fef32223278dc0fe7c72c170194c8eec71eae681a1c22ba9033876eee115cd40",
+      "binary_sha256": "eab9a371d808b929789cb4681216a3a6d78da1b94c89e7c999d5ace029d095df"
+    },
+    {
+      "command": [
+        "g++",
+        "-std=c++17",
+        "-O3",
+        "-fno-fast-math",
+        "-ffp-contract=off",
+        "-fPIC",
+        "-shared",
+        "-DGROUP_COUNT=4",
+        "<workspace>/work/compact_certificate_trial_20261019/interface_check/jointtight_api.cpp",
+        "-I",
+        "<workspace>/outputs/order_selection_074500001_compact_certificate_20261019/source/guarded/robust_745",
+        "-o",
+        "<workspace>/work/compact_certificate_trial_20261019/interface_check/jointtight.so"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.4477216669999997,
+      "source_sha256": "1b9a6deaa5133937f9d9fab7dc53abe20e5c599a7bf4b3ccc1e00227d7ba3e79",
+      "binary_sha256": "d722816297eda6b18c02afe4867cfe6202b7af10e87ef7d13d34f4a89612f5f1"
+    },
+    {
+      "command": [
+        "g++",
+        "-std=c++17",
+        "-O3",
+        "-fno-fast-math",
+        "-ffp-contract=off",
+        "-fPIC",
+        "-shared",
+        "-DGROUP_COUNT=4",
+        "<workspace>/work/compact_certificate_trial_20261019/interface_check/jointtime_api.cpp",
+        "-I",
+        "<workspace>/outputs/order_selection_074500001_compact_certificate_20261019/source/guarded/robust_745",
+        "-o",
+        "<workspace>/work/compact_certificate_trial_20261019/interface_check/jointtime.so"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.247752458000001,
+      "source_sha256": "bdb14c982ab296c9be4fe308517a48c1de9cb35566b2f418103e9b7300f1f827",
+      "binary_sha256": "e85503e15145d46628e172e7e3d38abaf9cb9b37b28bc8827bbf48472b069946"
+    },
+    {
+      "command": [
+        "g++",
+        "-std=c++17",
+        "-O3",
+        "-fno-fast-math",
+        "-ffp-contract=off",
+        "-fPIC",
+        "-shared",
+        "<workspace>/work/compact_certificate_trial_20261019/interface_check/normalized_finite_api.cpp",
+        "-I",
+        "<workspace>/outputs/order_selection_074500001_compact_certificate_20261019/source/guarded/robust_745",
+        "-o",
+        "<workspace>/work/compact_certificate_trial_20261019/interface_check/normalized_finite.so"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.9302460000000004,
+      "source_sha256": "06d6101d785e36550cc3e741389b3e5056cc09c13a2e46aa341fa9b33dd38527",
+      "binary_sha256": "971999fb70f8067e0cbd7ffd09d38ba47475cd837aa7db5aed1685e383df879d"
+    }
+  ]
+}

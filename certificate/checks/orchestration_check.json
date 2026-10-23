@@ -1,0 +1,8 @@
+{
+  "status": "PASS_PARALLEL_REPLAY_AND_RESUME_INTERFACE",
+  "actual_initial_calls": 7,
+  "resumed_calls": 7,
+  "worker_processes": 2,
+  "distributed_verifier_not_modified": true,
+  "scope": "Orchestration test only; full numerical evidence is supplied separately."
+}

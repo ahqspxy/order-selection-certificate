@@ -1,0 +1,44 @@
+{
+  "numerical_counts": {
+    "boundary": 32529,
+    "atlas": 377458,
+    "global": 222958
+  },
+  "numerical_calls": 632945,
+  "maxima": {
+    "boundary": {
+      "index": 13344,
+      "upper_exact": "9007199251050061/9007199254740992"
+    },
+    "atlas": {
+      "index": 301558,
+      "upper_exact": "9007199253673271/9007199254740992"
+    },
+    "global": {
+      "index": 203658,
+      "upper_exact": "9007199253707871/9007199254740992"
+    }
+  },
+  "analytic_zero_upper_exact": "1145400220748999401/1529999940000000000",
+  "small_scale_upper_exact": "9007199253673271/9007199254740992",
+  "maximum_upper_exact": "9007199253707871/9007199254740992",
+  "uniform_upper_exact": "499999999943/500000000000",
+  "margin_to_one_exact": "1033121/9007199254740992",
+  "implicit_small_scale_cubes": 1,
+  "status": "PASS_COMPLETE_INPUT_AND_RESULT_TRANSFER",
+  "baseline": false,
+  "inherited_unchanged_calls": 429270,
+  "newly_verified_coarser_calls": 203675,
+  "removed_original_calls": 91033,
+  "sources_byte_identical": true,
+  "collapsed_small_scale_global_boxes": 117793,
+  "original_complete_replay_journal_sha256": "aa5f0d3b09245434bf5503949b837befda8f5cd4294dd2dce9dbd8e67a977499",
+  "original_complete_replay_completed_utc": "2026-10-19T09:09:00.577488+00:00",
+  "new_configuration_counts": {
+    "[100, 32]": 78132,
+    "[100, 16]": 125543
+  },
+  "atlas_state_band_cells_before": 14083989120,
+  "atlas_state_band_cells_after": 8627164800,
+  "scope": "All retained inputs and endpoints matched to a completed full numerical run, except changed resolutions, each of which was newly evaluated by the same guarded interval engine. No old comparison records are used."
+}

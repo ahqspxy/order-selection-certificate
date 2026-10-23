@@ -1,0 +1,655 @@
+{
+  "status": "PASS_NINE_REGION_SIX_ENGINE_CHECK",
+  "scope": "Nine fresh regional calculations, including both refined_dp scaling conventions and the stored maximum in each cover; not a full regional replay.",
+  "check_date": "2026-10-23",
+  "platform": "Darwin",
+  "machine": "arm64",
+  "python": "3.9.6",
+  "compiler": "Apple clang version 15.0.0 (clang-1500.3.9.4)\nTarget: arm64-apple-darwin25.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin\n",
+  "actual_integrations_recomputed": 9,
+  "all_six_engines_checked": true,
+  "all_results_match_stored_bits": true,
+  "records": [
+    {
+      "kind": "boundary",
+      "index": 0,
+      "method": "normalized_finite",
+      "upper": 0.999989479615944,
+      "upper_exact": "9007104495545563/9007199254740992",
+      "upper_hex": "0x1.fffe9efe96cdbp-1",
+      "diagnostic": [
+        0.2548736257845237,
+        0.00011584383141982411,
+        1.000000000000071
+      ],
+      "diagnostic_hex": [
+        "0x1.04fd977d6e0d1p-2",
+        "0x1.e5e25de9bdf63p-14",
+        "0x1.0000000000140p+0"
+      ],
+      "seconds": 0.01380987499999975,
+      "input_lo": [
+        0.71875,
+        0.75,
+        0.0625,
+        1.0
+      ],
+      "input_hi": [
+        0.75,
+        0.8125,
+        0.125,
+        1.0
+      ],
+      "resolution": 25,
+      "scale_lower_exact": "0",
+      "scale_upper_exact": "1/16384",
+      "environment_before_after_passed": true,
+      "stored_upper_hex": "0x1.fffe9efe96cdbp-1",
+      "matches_stored_bits": true
+    },
+    {
+      "kind": "boundary",
+      "index": 3,
+      "method": "normalized_dp",
+      "upper": 0.9999885104354354,
+      "upper_exact": "1125886970742951/1125899906842624",
+      "upper_hex": "0x1.fffe7e7964538p-1",
+      "diagnostic": [
+        0.00011311135652441738,
+        320.0,
+        8.0
+      ],
+      "diagnostic_hex": [
+        "0x1.da6c64eedaf32p-14",
+        "0x1.4000000000000p+8",
+        "0x1.0000000000000p+3"
+      ],
+      "seconds": 0.03228637499999998,
+      "input_lo": [
+        0.71875,
+        0.75,
+        0.0,
+        1.0
+      ],
+      "input_hi": [
+        0.734375,
+        0.8125,
+        0.0625,
+        1.0
+      ],
+      "resolution": [
+        50,
+        8
+      ],
+      "scale_lower_exact": "0",
+      "scale_upper_exact": "1/16384",
+      "environment_before_after_passed": true,
+      "stored_upper_hex": "0x1.fffe7e7964538p-1",
+      "matches_stored_bits": true
+    },
+    {
+      "kind": "atlas",
+      "index": 0,
+      "method": "refined_dp",
+      "upper": 0.9999955358245661,
+      "upper_exact": "9007159045023351/9007199254740992",
+      "upper_hex": "0x1.ffff6a3506677p-1",
+      "diagnostic": [
+        0.00011177022300323075,
+        320.0,
+        8.0
+      ],
+      "diagnostic_hex": [
+        "0x1.d4cc5cf531de7p-14",
+        "0x1.4000000000000p+8",
+        "0x1.0000000000000p+3"
+      ],
+      "seconds": 0.030593040999999488,
+      "input_lo": [
+        0.25,
+        1.0,
+        0.875,
+        0.0
+      ],
+      "input_hi": [
+        0.375,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolution": [
+        50,
+        8
+      ],
+      "scale_lower_exact": "1/8192",
+      "scale_upper_exact": "1/4096",
+      "environment_before_after_passed": true,
+      "stored_upper_hex": "0x1.ffff6a3506677p-1",
+      "matches_stored_bits": true
+    },
+    {
+      "kind": "global",
+      "index": 203658,
+      "method": "refined_dp",
+      "upper": 0.9999999998853005,
+      "upper_exact": "9007199253707871/9007199254740992",
+      "upper_hex": "0x1.ffffffff03c5fp-1",
+      "diagnostic": [
+        0.00011272777686723467,
+        2560.0,
+        32.0
+      ],
+      "diagnostic_hex": [
+        "0x1.d8d0875c16547p-14",
+        "0x1.4000000000000p+11",
+        "0x1.0000000000000p+5"
+      ],
+      "seconds": 0.3853938750000001,
+      "input_lo": [
+        0.0025634765625,
+        0.001708984375,
+        0.000244140625,
+        0.00146484375
+      ],
+      "input_hi": [
+        0.00262451171875,
+        0.0018310546875,
+        0.0003662109375,
+        0.001953125
+      ],
+      "resolution": [
+        400,
+        32
+      ],
+      "scale_lower_exact": "1",
+      "scale_upper_exact": "1",
+      "environment_before_after_passed": true,
+      "stored_upper_hex": "0x1.ffffffff03c5fp-1",
+      "matches_stored_bits": true
+    },
+    {
+      "kind": "global",
+      "index": 18176,
+      "method": "fasttight",
+      "upper": 0.999996303848061,
+      "upper_exact": "4503582981382001/4503599627370496",
+      "upper_hex": "0x1.ffff83fa4bee2p-1",
+      "diagnostic": [
+        38854.0,
+        0.0011676122891710588
+      ],
+      "diagnostic_hex": [
+        "0x1.2f8c000000000p+15",
+        "0x1.32152262b5ff8p-10"
+      ],
+      "seconds": 0.26991629200000133,
+      "input_lo": [
+        0.017578125,
+        0.015625,
+        0.0078125,
+        0.0
+      ],
+      "input_hi": [
+        0.01953125,
+        0.01953125,
+        0.015625,
+        0.015625
+      ],
+      "resolution": [
+        200,
+        1000
+      ],
+      "scale_lower_exact": "1",
+      "scale_upper_exact": "1",
+      "environment_before_after_passed": true,
+      "stored_upper_hex": "0x1.ffff83fa4bee2p-1",
+      "matches_stored_bits": true
+    },
+    {
+      "kind": "global",
+      "index": 0,
+      "method": "jointtight",
+      "upper": 0.9994931708518707,
+      "upper_exact": "9002634143615681/9007199254740992",
+      "upper_hex": "0x1.ffbd91a2c4ac1p-1",
+      "diagnostic": [
+        82800.0,
+        0.011186363824811266
+      ],
+      "diagnostic_hex": [
+        "0x1.4370000000000p+16",
+        "0x1.6e8e0564f4d68p-7"
+      ],
+      "seconds": 0.4852418749999998,
+      "input_lo": [
+        0.0,
+        0.0,
+        0.0625,
+        0.4375
+      ],
+      "input_hi": [
+        0.015625,
+        0.03125,
+        0.125,
+        0.5
+      ],
+      "resolution": [
+        200,
+        1000
+      ],
+      "scale_lower_exact": "1",
+      "scale_upper_exact": "1",
+      "environment_before_after_passed": true,
+      "stored_upper_hex": "0x1.ffbd91a2c4ac1p-1",
+      "matches_stored_bits": true
+    },
+    {
+      "kind": "global",
+      "index": 5508,
+      "method": "jointtime",
+      "upper": 0.9996960656430474,
+      "upper_exact": "4502230828713779/4503599627370496",
+      "upper_hex": "0x1.ffd829a7c0e66p-1",
+      "diagnostic": [
+        30074.0,
+        0.005905608612442848
+      ],
+      "diagnostic_hex": [
+        "0x1.d5e8000000000p+14",
+        "0x1.8307abda7999ap-8"
+      ],
+      "seconds": 0.19183712499999928,
+      "input_lo": [
+        0.046875,
+        0.1875,
+        0.9375,
+        0.0
+      ],
+      "input_hi": [
+        0.0625,
+        0.21875,
+        1.0,
+        0.0625
+      ],
+      "resolution": [
+        100,
+        500
+      ],
+      "scale_lower_exact": "1",
+      "scale_upper_exact": "1",
+      "environment_before_after_passed": true,
+      "stored_upper_hex": "0x1.ffd829a7c0e66p-1",
+      "matches_stored_bits": true
+    },
+    {
+      "kind": "boundary",
+      "index": 13344,
+      "method": "normalized_dp",
+      "upper": 0.9999999995902243,
+      "upper_exact": "9007199251050061/9007199254740992",
+      "upper_hex": "0x1.fffffffc7ae4dp-1",
+      "diagnostic": [
+        0.00011459019899528283,
+        320.0,
+        8.0
+      ],
+      "diagnostic_hex": [
+        "0x1.e0a04a0e5dddfp-14",
+        "0x1.4000000000000p+8",
+        "0x1.0000000000000p+3"
+      ],
+      "seconds": 0.007632791999999,
+      "input_lo": [
+        1.0,
+        0.890625,
+        0.0,
+        0.72265625
+      ],
+      "input_hi": [
+        1.0,
+        0.89453125,
+        0.00390625,
+        0.7265625
+      ],
+      "resolution": [
+        50,
+        8
+      ],
+      "scale_lower_exact": "0",
+      "scale_upper_exact": "1/16384",
+      "environment_before_after_passed": true,
+      "stored_upper_hex": "0x1.fffffffc7ae4dp-1",
+      "matches_stored_bits": true
+    },
+    {
+      "kind": "atlas",
+      "index": 301558,
+      "method": "refined_dp",
+      "upper": 0.9999999998814592,
+      "upper_exact": "9007199253673271/9007199254740992",
+      "upper_hex": "0x1.fffffffefb537p-1",
+      "diagnostic": [
+        0.00011332512334375934,
+        1280.0,
+        32.0
+      ],
+      "diagnostic_hex": [
+        "0x1.db51ecb57aae2p-14",
+        "0x1.4000000000000p+10",
+        "0x1.0000000000000p+5"
+      ],
+      "seconds": 0.17650075000000243,
+      "input_lo": [
+        1.0,
+        0.83984375,
+        0.0,
+        0.5625
+      ],
+      "input_hi": [
+        1.0,
+        0.84375,
+        0.00390625,
+        0.5703125
+      ],
+      "resolution": [
+        200,
+        32
+      ],
+      "scale_lower_exact": "7/32768",
+      "scale_upper_exact": "1/4096",
+      "environment_before_after_passed": true,
+      "stored_upper_hex": "0x1.fffffffefb537p-1",
+      "matches_stored_bits": true
+    }
+  ],
+  "engines": {
+    "normalized_finite": {
+      "identity": {
+        "method": "normalized_finite",
+        "binary_sha256": "39143f63fb56f09958bc07ade9872fccc1b172ceb85338f329c7c127040b6912",
+        "kernel_interval_sha256": "0662485749317a3e0b1fa132906baceb40715b681af636e3b6b7523b8b0d91a4",
+        "strict_mode_observed": true,
+        "kernel_readback_endpoints": 1632,
+        "kernel_readback_bitwise_exact": true,
+        "gamma_intervals": [
+          [
+            "6710363534854031/9007199254740992",
+            "6710363534854033/9007199254740992"
+          ],
+          [
+            "3355181767427015/4503599627370496",
+            "3355181767427017/4503599627370496"
+          ]
+        ]
+      },
+      "guards": {
+        "counts": [
+          257262,
+          25122,
+          9489,
+          90,
+          0
+        ],
+        "ranges": [
+          6.103515625e-05,
+          20.0,
+          4.293156255839596e-07,
+          0.00010280159303878996
+        ],
+        "count_order": [
+          "intervals",
+          "divisions",
+          "exponentials",
+          "square_roots",
+          "max_sqrt_steps"
+        ],
+        "range_order": [
+          "minimum_divisor",
+          "maximum_exp_argument",
+          "minimum_sqrt_argument",
+          "maximum_sqrt_argument"
+        ]
+      }
+    },
+    "normalized_dp": {
+      "identity": {
+        "method": "normalized_dp",
+        "binary_sha256": "4ecae7a41e5f67815798b9fddd9f17befe39913c6bc7c9e7e930152716ec9e09",
+        "kernel_interval_sha256": "0662485749317a3e0b1fa132906baceb40715b681af636e3b6b7523b8b0d91a4",
+        "strict_mode_observed": true,
+        "kernel_readback_endpoints": 1632,
+        "kernel_readback_bitwise_exact": true,
+        "gamma_intervals": [
+          [
+            "6710363534854031/9007199254740992",
+            "6710363534854033/9007199254740992"
+          ],
+          [
+            "3355181767427015/4503599627370496",
+            "3355181767427017/4503599627370496"
+          ]
+        ]
+      },
+      "guards": {
+        "counts": [
+          2977339,
+          200347,
+          25423,
+          360,
+          0
+        ],
+        "ranges": [
+          6.103515625e-05,
+          20.0,
+          1.7751162972017135e-07,
+          0.00015926665983554683
+        ],
+        "count_order": [
+          "intervals",
+          "divisions",
+          "exponentials",
+          "square_roots",
+          "max_sqrt_steps"
+        ],
+        "range_order": [
+          "minimum_divisor",
+          "maximum_exp_argument",
+          "minimum_sqrt_argument",
+          "maximum_sqrt_argument"
+        ]
+      }
+    },
+    "refined_dp": {
+      "identity": {
+        "method": "refined_dp",
+        "binary_sha256": "30e25cb279fbfcae2ac667db09fc6a6403295864398f6fd04564d09cb7bbf17e",
+        "kernel_interval_sha256": "0662485749317a3e0b1fa132906baceb40715b681af636e3b6b7523b8b0d91a4",
+        "strict_mode_observed": true,
+        "kernel_readback_endpoints": 1632,
+        "kernel_readback_bitwise_exact": true,
+        "gamma_intervals": [
+          [
+            "6710363534854031/9007199254740992",
+            "6710363534854033/9007199254740992"
+          ],
+          [
+            "3355181767427015/4503599627370496",
+            "3355181767427017/4503599627370496"
+          ]
+        ]
+      },
+      "guards": {
+        "counts": [
+          108029188,
+          7319182,
+          245614,
+          2170,
+          0
+        ],
+        "ranges": [
+          3.051762468673519e-06,
+          20.0,
+          1.1171619185290656e-16,
+          0.009244690157107568
+        ],
+        "count_order": [
+          "intervals",
+          "divisions",
+          "exponentials",
+          "square_roots",
+          "max_sqrt_steps"
+        ],
+        "range_order": [
+          "minimum_divisor",
+          "maximum_exp_argument",
+          "minimum_sqrt_argument",
+          "maximum_sqrt_argument"
+        ]
+      }
+    },
+    "fasttight": {
+      "identity": {
+        "method": "fasttight",
+        "binary_sha256": "20aef209df98a1d564c01574c0c1f2e0128012ff49e656bcb7ec1717122b9747",
+        "kernel_interval_sha256": "0662485749317a3e0b1fa132906baceb40715b681af636e3b6b7523b8b0d91a4",
+        "strict_mode_observed": true,
+        "kernel_readback_endpoints": 1632,
+        "kernel_readback_bitwise_exact": true,
+        "gamma_intervals": [
+          [
+            "6710363534854031/9007199254740992",
+            "6710363534854033/9007199254740992"
+          ],
+          [
+            "3355181767427015/4503599627370496",
+            "3355181767427017/4503599627370496"
+          ]
+        ]
+      },
+      "guards": {
+        "counts": [
+          14235621,
+          1760553,
+          150415,
+          720,
+          0
+        ],
+        "ranges": [
+          3.800262766828765e-05,
+          20.0,
+          0.000516801491133443,
+          0.08161292327285029
+        ],
+        "count_order": [
+          "intervals",
+          "divisions",
+          "exponentials",
+          "square_roots",
+          "max_sqrt_steps"
+        ],
+        "range_order": [
+          "minimum_divisor",
+          "maximum_exp_argument",
+          "minimum_sqrt_argument",
+          "maximum_sqrt_argument"
+        ]
+      }
+    },
+    "jointtight": {
+      "identity": {
+        "method": "jointtight",
+        "binary_sha256": "87ab68ea08b9f761a7d1b2642ccaf223549fbd2707e75538d1693afb3080289c",
+        "kernel_interval_sha256": "0662485749317a3e0b1fa132906baceb40715b681af636e3b6b7523b8b0d91a4",
+        "strict_mode_observed": true,
+        "kernel_readback_endpoints": 1632,
+        "kernel_readback_bitwise_exact": true,
+        "gamma_intervals": [
+          [
+            "6710363534854031/9007199254740992",
+            "6710363534854033/9007199254740992"
+          ],
+          [
+            "3355181767427015/4503599627370496",
+            "3355181767427017/4503599627370496"
+          ]
+        ]
+      },
+      "guards": {
+        "counts": [
+          47914046,
+          5132344,
+          184935,
+          276,
+          0
+        ],
+        "ranges": [
+          0.00019614091438202583,
+          20.0,
+          8.908429549592267e-14,
+          0.863524911644086
+        ],
+        "count_order": [
+          "intervals",
+          "divisions",
+          "exponentials",
+          "square_roots",
+          "max_sqrt_steps"
+        ],
+        "range_order": [
+          "minimum_divisor",
+          "maximum_exp_argument",
+          "minimum_sqrt_argument",
+          "maximum_sqrt_argument"
+        ]
+      }
+    },
+    "jointtime": {
+      "identity": {
+        "method": "jointtime",
+        "binary_sha256": "a588f5d00b829910fd2a2079e200b97f1dcea2a052adb06a382660480829864a",
+        "kernel_interval_sha256": "0662485749317a3e0b1fa132906baceb40715b681af636e3b6b7523b8b0d91a4",
+        "strict_mode_observed": true,
+        "kernel_readback_endpoints": 1632,
+        "kernel_readback_bitwise_exact": true,
+        "gamma_intervals": [
+          [
+            "6710363534854031/9007199254740992",
+            "6710363534854033/9007199254740992"
+          ],
+          [
+            "3355181767427015/4503599627370496",
+            "3355181767427017/4503599627370496"
+          ]
+        ]
+      },
+      "guards": {
+        "counts": [
+          18224047,
+          1921950,
+          83576,
+          1,
+          0
+        ],
+        "ranges": [
+          0.001999999999998891,
+          20.0,
+          1.1963763313360706e-13,
+          1.1963763313360706e-13
+        ],
+        "count_order": [
+          "intervals",
+          "divisions",
+          "exponentials",
+          "square_roots",
+          "max_sqrt_steps"
+        ],
+        "range_order": [
+          "minimum_divisor",
+          "maximum_exp_argument",
+          "minimum_sqrt_argument",
+          "maximum_sqrt_argument"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "status": "PASS_GITHUB_REPOSITORY_PREPARATION_CHECKS",
+  "check_date": "2026-10-23",
+  "certificate_files_byte_identical_to_20261022_release": 33,
+  "certificate_manifest_entries_checked": 32,
+  "manuscript_sha256": "4f79893a7a2cca9cf27de69fc5f7964bb8dc176886d7d2f33fde94020ea34d71",
+  "manuscript_kernel_integers_matched": 69,
+  "git_roundtrip_core_autocrlf": true,
+  "all_certificate_bytes_preserved_by_git_roundtrip": true,
+  "new_full_numerical_replay": false,
+  "fresh_regional_calculations": 9,
+  "github_workflow_executed_remotely": false,
+  "scope": "Repository packaging, documentation, exact payload identity, and Git byte preservation. Numerical and arithmetic checks have separate reports."
+}

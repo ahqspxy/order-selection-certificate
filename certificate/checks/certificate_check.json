@@ -1,0 +1,481 @@
+{
+  "status": "PASS_COMPLETE_STORED_CERTIFICATE",
+  "actual_integrations_recomputed": 0,
+  "files_checked": 32,
+  "kernel": {
+    "status": "PASS_EXACT_RATIONAL_KERNEL",
+    "compact_integers_checked": 69,
+    "cycles_checked": 345,
+    "coefficient_intervals_certified": 816,
+    "row_column_marginals_exact": true,
+    "pointwise_positivity_certified": true,
+    "strict_positive_rectangle_lower_bounds": 384,
+    "zero_rectangle_lower_bounds": 16,
+    "smallest_positive_lower_exact": "1746320829253679169/250000000000000000000000000000",
+    "positive_diagonal_00_lower_gt": "1231/20000",
+    "method": "Exact rational degree-160 positive Taylor sums with an explicit geometric tail; no numerical transcendental library."
+  },
+  "geometry": {
+    "boundary": [
+      {
+        "pivot": 0,
+        "dimension": 3,
+        "leaves": 20230,
+        "volume_exact": "1",
+        "coverage_method": "exact_recursive_bisection",
+        "binary_tree_nodes": 40459,
+        "coordinate_denominators": [
+          512,
+          512,
+          256
+        ],
+        "closed_box_coverage": true
+      },
+      {
+        "pivot": 1,
+        "dimension": 3,
+        "leaves": 9060,
+        "volume_exact": "1",
+        "coverage_method": "exact_recursive_bisection",
+        "binary_tree_nodes": 18119,
+        "coordinate_denominators": [
+          512,
+          256,
+          128
+        ],
+        "closed_box_coverage": true
+      },
+      {
+        "pivot": 2,
+        "dimension": 3,
+        "leaves": 1251,
+        "volume_exact": "1",
+        "coverage_method": "exact_recursive_bisection",
+        "binary_tree_nodes": 2501,
+        "coordinate_denominators": [
+          128,
+          64,
+          32
+        ],
+        "closed_box_coverage": true
+      },
+      {
+        "pivot": 3,
+        "dimension": 3,
+        "leaves": 1988,
+        "volume_exact": "1",
+        "coverage_method": "exact_recursive_bisection",
+        "binary_tree_nodes": 3975,
+        "coordinate_denominators": [
+          128,
+          64,
+          64
+        ],
+        "closed_box_coverage": true
+      }
+    ],
+    "atlas": [
+      {
+        "pivot": 0,
+        "exponent": -14,
+        "dimension": 4,
+        "leaves": 11037,
+        "volume_exact": "1",
+        "coverage_method": "exact_recursive_bisection",
+        "binary_tree_nodes": 22073,
+        "coordinate_denominators": [
+          256,
+          256,
+          128,
+          1
+        ],
+        "closed_box_coverage": true,
+        "all_leaf_mappings_valid": true,
+        "exact_scale_mappings": 11037,
+        "scale_interval_exact": [
+          "1/16384",
+          "1/8192"
+        ]
+      },
+      {
+        "pivot": 0,
+        "exponent": -13,
+        "dimension": 4,
+        "leaves": 29443,
+        "volume_exact": "1",
+        "coverage_method": "exact_recursive_bisection",
+        "binary_tree_nodes": 58885,
+        "coordinate_denominators": [
+          512,
+          256,
+          128,
+          16
+        ],
+        "closed_box_coverage": true,
+        "all_leaf_mappings_valid": true,
+        "exact_scale_mappings": 29443,
+        "scale_interval_exact": [
+          "1/8192",
+          "1/4096"
+        ]
+      },
+      {
+        "pivot": 0,
+        "exponent": -12,
+        "dimension": 4,
+        "leaves": 92413,
+        "volume_exact": "1",
+        "coverage_method": "exact_recursive_bisection",
+        "binary_tree_nodes": 184825,
+        "coordinate_denominators": [
+          256,
+          256,
+          128,
+          128
+        ],
+        "closed_box_coverage": true,
+        "all_leaf_mappings_valid": true,
+        "exact_scale_mappings": 92413,
+        "scale_interval_exact": [
+          "1/4096",
+          "1/2048"
+        ]
+      },
+      {
+        "pivot": 0,
+        "exponent": -11,
+        "dimension": 4,
+        "leaves": 77731,
+        "volume_exact": "1",
+        "coverage_method": "exact_recursive_bisection",
+        "binary_tree_nodes": 155461,
+        "coordinate_denominators": [
+          128,
+          64,
+          64,
+          128
+        ],
+        "closed_box_coverage": true,
+        "all_leaf_mappings_valid": true,
+        "exact_scale_mappings": 77731,
+        "scale_interval_exact": [
+          "1/2048",
+          "1/1024"
+        ]
+      },
+      {
+        "pivot": 1,
+        "exponent": -14,
+        "dimension": 4,
+        "leaves": 5706,
+        "volume_exact": "1",
+        "coverage_method": "exact_recursive_bisection",
+        "binary_tree_nodes": 11411,
+        "coordinate_denominators": [
+          512,
+          128,
+          128,
+          1
+        ],
+        "closed_box_coverage": true,
+        "all_leaf_mappings_valid": true,
+        "exact_scale_mappings": 5706,
+        "scale_interval_exact": [
+          "1/16384",
+          "1/8192"
+        ]
+      },
+      {
+        "pivot": 1,
+        "exponent": -13,
+        "dimension": 4,
+        "leaves": 10800,
+        "volume_exact": "1",
+        "coverage_method": "exact_recursive_bisection",
+        "binary_tree_nodes": 21599,
+        "coordinate_denominators": [
+          512,
+          256,
+          128,
+          2
+        ],
+        "closed_box_coverage": true,
+        "all_leaf_mappings_valid": true,
+        "exact_scale_mappings": 10800,
+        "scale_interval_exact": [
+          "1/8192",
+          "1/4096"
+        ]
+      },
+      {
+        "pivot": 1,
+        "exponent": -12,
+        "dimension": 4,
+        "leaves": 44682,
+        "volume_exact": "1",
+        "coverage_method": "exact_recursive_bisection",
+        "binary_tree_nodes": 89363,
+        "coordinate_denominators": [
+          512,
+          512,
+          128,
+          64
+        ],
+        "closed_box_coverage": true,
+        "all_leaf_mappings_valid": true,
+        "exact_scale_mappings": 44682,
+        "scale_interval_exact": [
+          "1/4096",
+          "1/2048"
+        ]
+      },
+      {
+        "pivot": 1,
+        "exponent": -11,
+        "dimension": 4,
+        "leaves": 65389,
+        "volume_exact": "1",
+        "coverage_method": "exact_recursive_bisection",
+        "binary_tree_nodes": 130777,
+        "coordinate_denominators": [
+          256,
+          256,
+          64,
+          128
+        ],
+        "closed_box_coverage": true,
+        "all_leaf_mappings_valid": true,
+        "exact_scale_mappings": 65389,
+        "scale_interval_exact": [
+          "1/2048",
+          "1/1024"
+        ]
+      },
+      {
+        "pivot": 2,
+        "exponent": -14,
+        "dimension": 4,
+        "leaves": 369,
+        "volume_exact": "1",
+        "coverage_method": "exact_recursive_bisection",
+        "binary_tree_nodes": 737,
+        "coordinate_denominators": [
+          64,
+          128,
+          1,
+          1
+        ],
+        "closed_box_coverage": true,
+        "all_leaf_mappings_valid": true,
+        "exact_scale_mappings": 369,
+        "scale_interval_exact": [
+          "1/16384",
+          "1/8192"
+        ]
+      },
+      {
+        "pivot": 2,
+        "exponent": -13,
+        "dimension": 4,
+        "leaves": 515,
+        "volume_exact": "1",
+        "coverage_method": "exact_recursive_bisection",
+        "binary_tree_nodes": 1029,
+        "coordinate_denominators": [
+          128,
+          256,
+          2,
+          1
+        ],
+        "closed_box_coverage": true,
+        "all_leaf_mappings_valid": true,
+        "exact_scale_mappings": 515,
+        "scale_interval_exact": [
+          "1/8192",
+          "1/4096"
+        ]
+      },
+      {
+        "pivot": 2,
+        "exponent": -12,
+        "dimension": 4,
+        "leaves": 3399,
+        "volume_exact": "1",
+        "coverage_method": "exact_recursive_bisection",
+        "binary_tree_nodes": 6797,
+        "coordinate_denominators": [
+          256,
+          1024,
+          8,
+          16
+        ],
+        "closed_box_coverage": true,
+        "all_leaf_mappings_valid": true,
+        "exact_scale_mappings": 3399,
+        "scale_interval_exact": [
+          "1/4096",
+          "1/2048"
+        ]
+      },
+      {
+        "pivot": 2,
+        "exponent": -11,
+        "dimension": 4,
+        "leaves": 11541,
+        "volume_exact": "1",
+        "coverage_method": "exact_recursive_bisection",
+        "binary_tree_nodes": 23081,
+        "coordinate_denominators": [
+          256,
+          512,
+          8,
+          128
+        ],
+        "closed_box_coverage": true,
+        "all_leaf_mappings_valid": true,
+        "exact_scale_mappings": 11541,
+        "scale_interval_exact": [
+          "1/2048",
+          "1/1024"
+        ]
+      },
+      {
+        "pivot": 3,
+        "exponent": -14,
+        "dimension": 4,
+        "leaves": 6320,
+        "volume_exact": "1",
+        "coverage_method": "exact_recursive_bisection",
+        "binary_tree_nodes": 12639,
+        "coordinate_denominators": [
+          128,
+          128,
+          64,
+          1
+        ],
+        "closed_box_coverage": true,
+        "all_leaf_mappings_valid": true,
+        "exact_scale_mappings": 6320,
+        "scale_interval_exact": [
+          "1/16384",
+          "1/8192"
+        ]
+      },
+      {
+        "pivot": 3,
+        "exponent": -13,
+        "dimension": 4,
+        "leaves": 5334,
+        "volume_exact": "1",
+        "coverage_method": "exact_recursive_bisection",
+        "binary_tree_nodes": 10667,
+        "coordinate_denominators": [
+          128,
+          128,
+          64,
+          1
+        ],
+        "closed_box_coverage": true,
+        "all_leaf_mappings_valid": true,
+        "exact_scale_mappings": 5334,
+        "scale_interval_exact": [
+          "1/8192",
+          "1/4096"
+        ]
+      },
+      {
+        "pivot": 3,
+        "exponent": -12,
+        "dimension": 4,
+        "leaves": 4877,
+        "volume_exact": "1",
+        "coverage_method": "exact_recursive_bisection",
+        "binary_tree_nodes": 9753,
+        "coordinate_denominators": [
+          128,
+          128,
+          64,
+          8
+        ],
+        "closed_box_coverage": true,
+        "all_leaf_mappings_valid": true,
+        "exact_scale_mappings": 4877,
+        "scale_interval_exact": [
+          "1/4096",
+          "1/2048"
+        ]
+      },
+      {
+        "pivot": 3,
+        "exponent": -11,
+        "dimension": 4,
+        "leaves": 7902,
+        "volume_exact": "1",
+        "coverage_method": "exact_recursive_bisection",
+        "binary_tree_nodes": 15803,
+        "coordinate_denominators": [
+          128,
+          64,
+          64,
+          64
+        ],
+        "closed_box_coverage": true,
+        "all_leaf_mappings_valid": true,
+        "exact_scale_mappings": 7902,
+        "scale_interval_exact": [
+          "1/2048",
+          "1/1024"
+        ]
+      }
+    ],
+    "global": {
+      "dimension": 4,
+      "leaves": 222959,
+      "volume_exact": "1",
+      "coverage_method": "exact_recursive_bisection",
+      "binary_tree_nodes": 445917,
+      "coordinate_denominators": [
+        131072,
+        65536,
+        65536,
+        32768
+      ],
+      "closed_box_coverage": true
+    },
+    "global_methods": {
+      "jointtight": 8765,
+      "jointtime": 33775,
+      "refined_dp": 175903,
+      "fasttight": 4515
+    }
+  },
+  "summary": {
+    "numerical_counts": {
+      "boundary": 32529,
+      "atlas": 377458,
+      "global": 222958
+    },
+    "numerical_calls": 632945,
+    "maxima": {
+      "boundary": {
+        "index": 13344,
+        "upper_exact": "9007199251050061/9007199254740992"
+      },
+      "atlas": {
+        "index": 301558,
+        "upper_exact": "9007199253673271/9007199254740992"
+      },
+      "global": {
+        "index": 203658,
+        "upper_exact": "9007199253707871/9007199254740992"
+      }
+    },
+    "analytic_zero_upper_exact": "1145400220748999401/1529999940000000000",
+    "small_scale_upper_exact": "9007199253673271/9007199254740992",
+    "maximum_upper_exact": "9007199253707871/9007199254740992",
+    "uniform_upper_exact": "499999999943/500000000000",
+    "margin_to_one_exact": "1033121/9007199254740992",
+    "implicit_small_scale_cubes": 1
+  },
+  "elapsed_seconds": 58.073325833999995
+}

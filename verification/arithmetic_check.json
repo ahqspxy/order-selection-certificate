@@ -1,0 +1,25 @@
+{
+  "status": "PASS_EXACT_RATIONAL_ARITHMETIC_CROSS_CHECKS",
+  "basic_interval_cases": 13070,
+  "exponential_cases": 160,
+  "logarithm_lower_bound_cases": 90,
+  "square_root_upper_bound_cases": 109,
+  "reference_arithmetic": "Python Fraction, exact 200-term exponential bounds and 100-term positive logarithm lower bounds",
+  "source_header_sha256": "b05bd3974430cae4e5e5bab04bf0d0f67deba7916bbc847ba3416f5f043ed2f7",
+  "compiler_command": [
+    "g++",
+    "-std=c++17",
+    "-O3",
+    "-fno-fast-math",
+    "-ffp-contract=off",
+    "-fPIC",
+    "-shared",
+    "<arithmetic-check>/arithmetic_oracle_api.cpp",
+    "-I",
+    "certificate/source/guarded/robust_745",
+    "-o",
+    "<arithmetic-check>/arithmetic_oracle.so"
+  ],
+  "scope": "Primitive cross-checks plus the manuscript arithmetic argument; not a full regional replay.",
+  "check_date": "2026-10-23"
+}

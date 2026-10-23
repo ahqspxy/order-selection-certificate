@@ -1,0 +1,112 @@
+{
+  "status": "PASS_FINAL_V3_MANUSCRIPT_AND_DOCUMENTATION_INTERFACE_CHECKS",
+  "revision_date": "2026-10-22",
+  "scope": "Requested notation restoration, manuscript synchronization, exact table/constants and reference checks, documentation of both scaling conventions, and unchanged numerical payload. This packaging check does not claim a new full numerical replay.",
+  "base_manuscript_filename": "main_new_v3.tex",
+  "base_manuscript_sha256": "050b544e8f09d6707743528100102236aa4ab159c4ba78b7bec529ae269ba37d",
+  "manuscript_filename": "main.tex",
+  "manuscript_sha256": "4f79893a7a2cca9cf27de69fc5f7964bb8dc176886d7d2f33fde94020ea34d71",
+  "separate_and_bundled_main_tex_byte_identical": true,
+  "paper_change_limited_to_three_auxiliary_index_replacements": true,
+  "auxiliary_index_notation": "\\widetilde I",
+  "auxiliary_index_occurrences": 3,
+  "desktop_compilation": "success",
+  "labels_checked": 295,
+  "bibliography_entries": 52,
+  "undefined_active_references": [],
+  "duplicate_active_labels": [],
+  "undefined_citation_keys": [],
+  "external_tex_resources": [],
+  "documentation": {
+    "README.md": {
+      "sha256": "c28997912bf3ff4f84c1e10fcb37e91667deacf8ed30299bce79c3d7b6b9c6ed",
+      "paper_labels_checked": [
+        "app:cert-arithmetic",
+        "app:cert-atoms",
+        "app:cert-cover",
+        "app:cert-credit",
+        "app:cert-direct-updates",
+        "app:cert-inverse-bounds",
+        "app:cert-potential-construction",
+        "app:cert-regional-comparison",
+        "eq:cert-K",
+        "eq:cert-augmented-load",
+        "eq:cert-delta",
+        "eq:cert-forward-bound",
+        "eq:cert-gamma",
+        "eq:cert-mass-map",
+        "eq:cert-max",
+        "eq:cert-normalized-masses",
+        "eq:cert-p",
+        "eq:cert-zero-scale",
+        "lem:cert-finite-data",
+        "lem:cert-kernel-valid",
+        "sec:cert-schemes",
+        "tab:cert-kernel"
+      ],
+      "relative_links_checked": [
+        "main.tex",
+        "DATA_FORMAT.md"
+      ]
+    },
+    "DATA_FORMAT.md": {
+      "sha256": "c6a119de9d4d1d8e8bdc91cf1f981a3ddc81b8ecb8fbf106ae216dc508b7b336",
+      "paper_labels_checked": [
+        "eq:cert-chord-moments",
+        "eq:cert-max",
+        "eq:cert-scale-charts",
+        "eq:cert-zero-scale",
+        "tab:cert-kernel"
+      ],
+      "relative_links_checked": [
+        "main.tex",
+        "README.md"
+      ]
+    }
+  },
+  "boundary_atlas_and_unit_scale_global_call_conventions_distinguished": true,
+  "exact_kernel_integer_coefficients_matched": 69,
+  "certificate_constants_checked": [
+    "target_ratio",
+    "acceptance_threshold",
+    "maximum_upper_bound",
+    "perturbation_factor",
+    "boundary_count",
+    "atlas_count",
+    "global_count",
+    "total_count"
+  ],
+  "numeric_regions": 632945,
+  "maximum_upper_exact": "9007199253707871/9007199254740992",
+  "numerical_sources_descriptors_results_and_checking_programs_byte_identical": true,
+  "unchanged_files_relative_to_previous_release": [
+    "check_arithmetic.py",
+    "checks/arithmetic_check.json",
+    "checks/construction_check.json",
+    "checks/interface_check.json",
+    "checks/orchestration_check.json",
+    "data/atlas_cover.json.xz",
+    "data/boundary_cover.json.xz",
+    "data/global_cover.json.xz",
+    "helpers/geometry_audit.py",
+    "helpers/partition_audit.py",
+    "interval_engine.py",
+    "kernel_check.py",
+    "results.json.xz",
+    "source/guarded/higher_ratio/higher_interval.hpp",
+    "source/guarded/robust_745/bulk_r1_exact/constants.txt",
+    "source/guarded/robust_745/bulk_r1_exact/cycles.json",
+    "source/guarded/robust_745/bulk_r1_exact/kernel_compact.json",
+    "source/guarded/robust_745/bulk_r1_exact/kernel_intervals.txt",
+    "source/guarded/robust_745/certification_environment.cpp",
+    "source/guarded/robust_745/fasttight4.cpp",
+    "source/guarded/robust_745/jointtight4.cpp",
+    "source/guarded/robust_745/jointtime4.cpp",
+    "source/guarded/robust_745/normalized_cert.cpp",
+    "source/guarded/robust_745/normalized_dp.cpp",
+    "source/guarded/robust_745/normalized_dp_refined.cpp",
+    "source/guarded/robust_745/normalized_finite.cpp",
+    "verify.py"
+  ],
+  "full_numerical_replay_performed_for_this_update": false
+}
