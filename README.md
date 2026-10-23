@@ -85,26 +85,13 @@ not replace the regional comparisons or the full replay.
 | [verification/](verification/) | Checks performed when preparing this repository. |
 
 The `certificate/` directory is byte-identical to the 22 October 2026 final
-package. Its manuscript is named `main.tex`. Root-level documentation and
-GitHub configuration are outside that package's manifest.
+package. Its manuscript is named `main.tex`. Repository-level documentation is outside that package's manifest.
 
 Keep `certificate/` as a subdirectory: its verifier checks the exact file
 set, so Git metadata, build products, editor backups, and generated reports
-must stay outside it. `.gitattributes` preserves the certificate's bytes
-across Git checkouts, and `.gitignore` excludes the documented run outputs.
+must stay outside it.
 To compile the paper, copy `certificate/main.tex` to a separate working
 directory so that LaTeX auxiliary files do not enter the checked package.
-
-## Automated checks
-
-The [GitHub Actions workflow](.github/workflows/verify.yml) runs the complete
-stored-certificate check and the arithmetic cross-check on pushes, pull
-requests, and manual dispatch. It uses the official
-[checkout](https://github.com/actions/checkout) and
-[setup-python](https://github.com/actions/setup-python) actions.
-A successful workflow is a stored-certificate and arithmetic check, not a
-full numerical replay. The expensive replay is run explicitly using the
-command above.
 
 ## Referring to the certificate
 

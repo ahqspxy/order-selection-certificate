@@ -13,8 +13,8 @@ sources, is byte-identical to the final package of 22 October 2026.
 
 The fresh numerical calls ran on macOS/arm64 with Python 3.9.6 and Apple
 Clang; the engine report records the compiler version. These are local
-results, not a report of a GitHub-hosted workflow execution. The supplied
-workflow will run the stored-certificate and arithmetic checks on Ubuntu.
+results. The checks can be run after downloading the repository, using the
+commands in the root README.
 
 The nine-region check is not a new full numerical replay. Full replay is
 available through `certificate/verify.py --recompute` as documented in the
