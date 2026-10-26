@@ -5,7 +5,7 @@
 \usepackage{amsmath,amssymb,amsthm,mathtools}
 \usepackage{enumitem,booktabs,array}
 \usepackage[authoryear,round]{natbib}
-\usepackage[hidelinks]{hyperref}
+\usepackage[colorlinks=true,urlcolor=blue,linkcolor=black,citecolor=black]{hyperref}
 \usepackage{tcolorbox}
 \usepackage{xcolor}
 \usepackage{tikz}
@@ -24,7 +24,7 @@
   flowlabel/.style={font=\scriptsize\itshape, text=black!65, align=flush center},
 }
 
-\hypersetup{pdftitle={Order-selection Prophet Inequality Goes I.I.D.}}
+\hypersetup{pdftitle={Order-selection Prophet Inequality (Almost) Goes I.I.D.}}
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{proposition}[theorem]{Proposition}
 \newtheorem{lemma}[theorem]{Lemma}
@@ -44,8 +44,15 @@
 \setlength{\emergencystretch}{2em}
 \setlist[enumerate]{leftmargin=*,itemsep=3pt,topsep=5pt}
 \allowdisplaybreaks[1]
-\title{Order-selection Prophet Inequality Goes I.I.D.}
-\author{}
+\title{Order-selection Prophet Inequality (Almost) Goes I.I.D.}
+\author{
+  Bo Peng\thanks{Email: \texttt{ahqspbo@gmail.com}.}\\
+  Tel Aviv University
+  \and
+  Zhihao Gavin Tang\thanks{Email:
+    \texttt{tang.zhihao@mail.shufe.edu.cn}.}\\
+  Shanghai University of Finance and Economics
+}
 \date{}
 \begin{document}
 \maketitle
@@ -789,17 +796,30 @@ The kernel may depend on $\Gamma$, but the same kernel must work for every profi
 The following proposition makes this feasibility criterion precise.
 
 \begin{proposition}[Universal feasibility]\label{prop:scalar-feasibility}
-For the fixed pair $(\Gamma,K)$, the prescribed arrival construction is feasible for every input if and only if
+For the fixed pair $(\Gamma,K)$, the prescribed arrival construction
+is feasible for every atomless input if and only if
 \begin{equation}\label{eq:robust}
  \sup_{\lambda\in\Lambda}\ell_\Gamma(K,\lambda)\le1.
 \end{equation}
-Whenever~\eqref{eq:robust} holds, the resulting algorithm satisfies the exact item-wise guarantee~\eqref{eq:itemwise} for every input.
+Whenever~\eqref{eq:robust} holds, the resulting algorithm satisfies
+the exact item-wise guarantee~\eqref{eq:itemwise} for every atomless
+input. Moreover, the same competitive guarantee extends to arbitrary
+independent nonnegative distributions, including those with atoms
+(Appendix~\ref{app:cert-atoms}).
 \end{proposition}
+% \begin{proposition}[Universal feasibility]\label{prop:scalar-feasibility}
+% For the fixed pair $(\Gamma,K)$, the prescribed arrival construction is feasible for every input if and only if
+% \begin{equation}\label{eq:robust}
+%  \sup_{\lambda\in\Lambda}\ell_\Gamma(K,\lambda)\le1.
+% \end{equation}
+% Whenever~\eqref{eq:robust} holds, the resulting algorithm satisfies the exact item-wise guarantee~\eqref{eq:itemwise} for every input.
+% \end{proposition}
 \begin{proof}
 By Theorem~\ref{thm:local}, $K$ defines a local construction, so the allocation constraints hold for every input.
 If~\eqref{eq:robust} holds, all item loads are at most one, and Theorem~\ref{thm:bc} gives feasibility and the item-wise guarantee.
 Conversely, every profile $\lambda\in\Lambda$ is realizable in an atomless, nonnegative two-item input with profiles $(\lambda,1-\lambda)$; Appendix~\ref{app:realization} gives the construction.
-Universal feasibility therefore requires $\ell_\Gamma(K,\lambda)\le1$ for every $\lambda$.
+Universal feasibility therefore requires $\ell_\Gamma(K,\lambda)\le1$ for every $\lambda$. The extension to arbitrary independent distributions
+is established in Appendix~\ref{app:cert-atoms}.
 \end{proof}
 
 We call an allocation kernel $K$ \emph{universally feasible at $\Gamma$}
@@ -2058,21 +2078,25 @@ and satisfies
 \begin{equation}\label{eq:cert-load-target}
  \sup_{\lambda\in\Lambda}\ell_{\Gamma_1}(K_1,\lambda)<1.
 \end{equation}
-Consequently, the prescribed arrival construction is universally
-feasible at $\Gamma_1$ and satisfies the exact item-wise
+Consequently, by Proposition~\ref{prop:scalar-feasibility},
+the prescribed arrival construction is universally feasible at
+$\Gamma_1$ and satisfies the exact item-wise
 guarantee~\eqref{eq:itemwise} on every atomless input.
-The competitive guarantee extends to arbitrary independent nonnegative
-values, giving an order-selection algorithm with
+Moreover, it yields an order-selection algorithm for arbitrary
+independent nonnegative values with
 \[
  \E[\ALG]\ge\Gamma_1\E[\OPT].
 \]
 \end{theorem}
 
+
 The proof, including the finite numerical certificate, is given in
 Appendix~\ref{app:cert-proof}.
 Appendix~\ref{app:cert-details} provides the supporting estimates and
-exact arithmetic, and Appendix~\ref{app:cert-atoms} gives the extension
-to distributions with atoms.
+exact arithmetic.
+A complete verification package is
+\href{https://github.com/ahqspxy/order-selection-certificate}
+{publicly available}.
 
 \paragraph{Proof architecture.}
 Figure~\ref{fig:proof-architecture} compares the proof with that of
@@ -2114,17 +2138,10 @@ in Section~\ref{sec:kzero-analysis}, would clarify which features of $K_1$ are e
 % universally feasible at $\Gamma_\star$ remains open.
 
 \section*{AI Disclosure}
-We used AI systems both in obtaining the results of this paper and in writing it.
-The characterization of local constructions by allocation kernels (Section~\ref{sec:local})
-and the construction of the baseline kernel $K_0$ (Section~\ref{sec:k0}) were developed by the
-authors. The construction beyond $K_0$ that yields the ratio $\Gamma_1>0.745$, namely the kernel
-$K_1$ of Section~\ref{sec:final-kernel}, was developed by AI systems, together with its analysis
-and the computer-assisted certificate in Appendices~\ref{app:cert-proof}
-and~\ref{app:cert-details}. Beyond the motivation given in Section~\ref{sec:final-motivation},
-we have not yet developed an intuition for this construction. Although the guarantee for $K_1$
-is rigorous, we therefore regard it mainly as strong numerical evidence that the
-order-selection prophet inequality admits the optimal i.i.d.\ ratio $\Gamma_\star$, and we expect
-it to be an intermediate step toward a proof of that ratio.
+
+AI systems were used in both the development of the results presented in this paper and the preparation of the manuscript.
+
+The characterization of local constructions via allocation kernels (Section~\ref{sec:local}) and the construction of the baseline kernel $K_0$ (Section~\ref{sec:k0}) were developed by the authors. The improved construction achieving the ratio $\Gamma_1>0.745$, namely the kernel $K_1$ in Section~\ref{sec:final-kernel}, was developed by AI systems, along with its analysis and the computer-assisted certificate in Appendices~\ref{app:cert-proof} and~\ref{app:cert-details}. Beyond the motivation provided in Section~\ref{sec:final-motivation}, we do not yet have a conceptual understanding of this construction. Although the performance guarantee for $K_1$ is rigorous, we view the construction primarily as compelling numerical evidence that the order-selection prophet inequality admits the optimal i.i.d.\ ratio $\Gamma_\star$, rather than as a definitive explanation of why this ratio is attainable. We regard it as an intermediate step toward a proof of this optimal ratio.
 
 \begin{thebibliography}{99}
 \bibitem[Abolhassani et al.(2017)]{AEEHKL17}
@@ -3985,10 +4002,10 @@ Lemma~\ref{lem:cert-finite-data}, so
 $\overline\ell_\lambda\le U_{\max}<U_{\mathrm{cert}}$.
 Equation~\eqref{eq:cert-load-identity} gives
 $\ell_{\Gamma_1}(K_1,\lambda)\le\overline\ell_\lambda$ in both cases.
-Proposition~\ref{prop:scalar-feasibility} now gives universal feasibility
-and the item-wise guarantee for atomless inputs.
-Appendix~\ref{app:cert-atoms} extends the competitive guarantee to
-arbitrary independent values.
+Proposition~\ref{prop:scalar-feasibility} now gives universal
+feasibility, the exact item-wise guarantee for atomless inputs,
+and the competitive guarantee for arbitrary independent
+nonnegative distributions.
 \end{proof}
 
 \section{Estimates and Finite Updates for the Certificate}
@@ -5379,10 +5396,13 @@ Appendix~\ref{app:cert-potential-construction}.
 
 \section{Extension to Distributions with Atoms}\label{app:cert-atoms}
 
-The universal profile bound in Theorem~\ref{thm:certified-kernel}
-implies the same competitive guarantee for distributions with atoms.
-We give the reduction explicitly to preserve the item-wise property
-under tie-breaking.
+We prove the extension stated in
+Proposition~\ref{prop:scalar-feasibility}.
+Fix any target ratio $\Gamma\in(0,1)$ and allocation kernel $K$
+satisfying~\eqref{eq:robust}.
+We show that the corresponding competitive guarantee extends to
+arbitrary independent nonnegative distributions, including those
+with atoms, via randomized tie-breaking.
 
 Let $F_{\mathrm{mix}}(v):=n^{-1}\sum_iF_i(v)$ and let $Z_i$ be
 independent uniform random variables, independent of the values.
@@ -5409,7 +5429,7 @@ the original values.  Moreover,
 \]
 where $F_{\mathrm{mix}}^{-1}$ is the usual lower quantile.
 Apply the arrival construction to the scores, using their known
-atomless distributions and the kernel $K_1$.
+atomless distributions and the kernel $K$.
 This is a valid order-selection algorithm for the original problem:
 its inspection order is chosen independently of the values, and the
 score of an inspected item can be computed from its value and its
@@ -5420,14 +5440,14 @@ almost surely.  The exact item-wise guarantee for the scores implies,
 for every Borel set $E$,
 \[
  \Pp(I=i,\,X_i\in E)
- =\Gamma_1\Pp(I^*=i,\,X_i\in E).
+ =\Gamma\Pp(I^*=i,\,X_i\in E).
 \]
 Taking $E=\{x:F_{\mathrm{mix}}^{-1}(x)>v\}$ and summing over $i$ gives
 \[
- \Pp(\ALG>v)=\Gamma_1\Pp(\OPT>v)\qquad(v\ge0).
+ \Pp(\ALG>v)=\Gamma \Pp(\OPT>v)\qquad(v\ge0).
 \]
 Integration over $v$ proves
-$\E[\ALG]=\Gamma_1\E[\OPT]$ whenever the latter expectation is finite,
+$\E[\ALG]=\Gamma\E[\OPT]$ whenever the latter expectation is finite,
 and in particular the claimed competitive guarantee.
 
 \end{document}
