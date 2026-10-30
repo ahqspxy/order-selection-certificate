@@ -1,7 +1,9 @@
-# Supplementary certificate for *Order-selection Prophet Inequality Goes I.I.D.*
+# Supplementary certificate for *Order-selection Prophet Inequality (Almost) Goes I.I.D.*
 
 This package accompanies Theorem 6.1, “Universal guarantee for $K_1$”,
-in [main.tex](main.tex). It contains the exact kernel specification, the
+in [*Order-selection Prophet Inequality (Almost) Goes I.I.D.*](https://arxiv.org/abs/2610.34892)
+by Bo Peng and Zhihao Gavin Tang ([PDF](https://arxiv.org/pdf/2610.34892)).
+The bundled manuscript is [main.tex](main.tex). It contains the exact kernel specification, the
 complete finite parameter cover, the interval-arithmetic verification
 programs, and their stored regional upper bounds.
 
@@ -205,7 +207,7 @@ the regional upper bounds.
 
 | File or directory | Contents |
 | --- | --- |
-| `main.tex` | Companion manuscript, synchronized with the 22 October 2026 final v3 revision. |
+| `main.tex` | Companion manuscript, updated on 26 October 2026. |
 | `README.md`, `DATA_FORMAT.md` | Instructions, mathematical correspondence, and data specifications. |
 | `data/` | Three complete cover descriptors. |
 | `results.json.xz` | One exact binary64 upper endpoint per numerical region, bound to its inputs and implementation. |
@@ -214,19 +216,25 @@ the regional upper bounds.
 | `checks/` | Verification reports and their stated scopes. |
 | `SHA256SUMS.json` | Hashes of every other distributed file. |
 
-The included `main.tex` is the clean v3 manuscript and is byte-identical
-to the separately supplied final `main.tex`. In Appendix H, the auxiliary
-uniformly selected index is denoted by $\widetilde I$; that reduction is
-analytic and introduces no additional numerical input.
+Section and appendix references above refer to the bundled `main.tex`.
+Appendix H states the extension to distributions with atoms for any pair
+$(\Gamma,K)$ satisfying the universal profile bound. This analytic reduction
+introduces no additional numerical input; the numerical certificate concerns
+the fixed pair $(\Gamma_1,K_1)$.
 Keep generated files and edited copies outside the distributed
 `certificate/` directory: the verifier checks its exact file set and contents.
 
-The 22 October 2026 update synchronizes the manuscript and documentation
-and clarifies the two scaling conventions. Numerical sources, cover
-descriptors, stored endpoints, and checking programs are unchanged.
-`checks/manuscript_check.json` records current document/data correspondence
-and `checks/certificate_check.json` the stored-certificate check. No full
-regional replay was performed for this update.
+The manuscript was updated on 26 October 2026. On 30 October 2026, the
+documentation was synchronized with the paper title and arXiv link, and the
+stored-certificate check was rerun. Numerical sources, cover descriptors,
+stored endpoints, and checking programs are unchanged. The two scaling
+conventions in DATA_FORMAT.md are unchanged.
+`checks/manuscript_check.json` records current document/data correspondence;
+[../verification/stored_certificate_check.json](../verification/stored_certificate_check.json)
+records the current stored-certificate check. The report
+`checks/certificate_check.json` is retained as a historical check of the
+22 October package. No regional integrations were recomputed for this
+documentation update.
 
 The unchanged `construction_check.json` records the stored results' origin:
 429,270 retained calculations matched the completed numerical run recorded

@@ -1,7 +1,11 @@
-# Numerical certificate for Order-selection Prophet Inequality Goes I.I.D.
+# Numerical certificate for Order-selection Prophet Inequality (Almost) Goes I.I.D.
 
 This repository accompanies Theorem 6.1 of
-[*Order-selection Prophet Inequality Goes I.I.D.*](certificate/main.tex).
+[*Order-selection Prophet Inequality (Almost) Goes I.I.D.*](https://arxiv.org/abs/2610.34892)
+by Bo Peng and Zhihao Gavin Tang.
+The paper is available on [arXiv:2610.34892](https://arxiv.org/abs/2610.34892)
+([PDF](https://arxiv.org/pdf/2610.34892)); the bundled LaTeX source is
+[certificate/main.tex](certificate/main.tex).
 It contains the exact kernel, the complete finite parameter cover, the
 interval-arithmetic programs, and the stored bounds for the competitive ratio
 
@@ -84,8 +88,11 @@ not replace the regional comparisons or the full replay.
 | [certificate/SHA256SUMS.json](certificate/SHA256SUMS.json) | Hash manifest for the complete certificate package. |
 | [verification/](verification/) | Checks performed when preparing this repository. |
 
-The `certificate/` directory is byte-identical to the 22 October 2026 final
-package. Its manuscript is named `main.tex`. Repository-level documentation is outside that package's manifest.
+The bundled manuscript was updated on 26 October 2026; the documentation
+was synchronized with the paper title and arXiv link on 30 October 2026.
+The numerical programs, exact kernel data, cover descriptors, stored results,
+and checking programs are unchanged from the 22 October 2026 package.
+Repository-level documentation is outside the certificate manifest.
 
 Keep `certificate/` as a subdirectory: its verifier checks the exact file
 set, so Git metadata, build products, editor backups, and generated reports

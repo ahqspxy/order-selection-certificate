@@ -477,5 +477,9 @@
     "margin_to_one_exact": "1033121/9007199254740992",
     "implicit_small_scale_cubes": 1
   },
-  "elapsed_seconds": 58.846227500000005
+  "elapsed_seconds": 62.770947792,
+  "verification_date": "2026-10-30",
+  "scope": "Fresh stored-certificate check after README/arXiv synchronization. No regional integrations were recomputed.",
+  "package_manifest_sha256": "53b07cb3fe83c9d84e51755ed9f6ea6979e7dab56618f579443ba381e3bfa94d",
+  "manuscript_sha256": "3b44d9ca21bac0f71d2187a1f6aa94401a368c4bb5eb4ae4623a187390538655"
 }

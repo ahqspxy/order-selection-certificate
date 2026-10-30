@@ -1,7 +1,7 @@
 {
-  "status": "PASS_MANUSCRIPT_ONLY_SYNCHRONIZATION",
-  "revision_date": "2026-10-26",
-  "scope": "Replace only the bundled manuscript and its hash record. Existing README files and historical numerical verification reports are retained. The numerical payload and all checking programs are unchanged. This update does not claim a new full numerical replay.",
+  "status": "PASS_MANUSCRIPT_AND_ARXIV_DOCUMENTATION_SYNCHRONIZATION",
+  "revision_date": "2026-10-30",
+  "scope": "Synchronize README titles, arXiv links, version descriptions, and documentation hashes. The bundled manuscript and the numerical payload are unchanged from the current public repository. No regional integrations are recomputed.",
   "source_manuscript_filename": "main-9.tex",
   "manuscript_filename": "main.tex",
   "manuscript_sha256": "3b44d9ca21bac0f71d2187a1f6aa94401a368c4bb5eb4ae4623a187390538655",
@@ -15,7 +15,7 @@
   "external_tex_resources": [],
   "documentation": {
     "README.md": {
-      "sha256": "c28997912bf3ff4f84c1e10fcb37e91667deacf8ed30299bce79c3d7b6b9c6ed",
+      "sha256": "68b629217ee7e2fdd6d94cf1d1c6891b436b02d42696e2d7240371f32358859b",
       "paper_labels_checked": [
         "app:cert-arithmetic",
         "app:cert-atoms",
@@ -42,7 +42,12 @@
       ],
       "relative_links_checked": [
         "main.tex",
-        "DATA_FORMAT.md"
+        "DATA_FORMAT.md",
+        "../verification/stored_certificate_check.json"
+      ],
+      "arxiv_links": [
+        "https://arxiv.org/abs/2610.34892",
+        "https://arxiv.org/pdf/2610.34892"
       ]
     },
     "DATA_FORMAT.md": {
@@ -57,10 +62,11 @@
       "relative_links_checked": [
         "main.tex",
         "README.md"
-      ]
+      ],
+      "arxiv_links": []
     }
   },
-  "documentation_files_retained_without_changes": true,
+  "documentation_files_retained_without_changes": false,
   "boundary_atlas_and_unit_scale_global_call_conventions_distinguished": true,
   "exact_kernel_integer_coefficients_matched": 69,
   "certificate_constants_checked": [
@@ -80,5 +86,43 @@
   "appendix_H_generalization_is_analytic_only": true,
   "numerical_sources_descriptors_results_and_checking_programs_byte_identical": true,
   "full_numerical_replay_performed_for_this_update": false,
-  "actual_integrations_recomputed_for_this_update": 0
+  "actual_integrations_recomputed_for_this_update": 0,
+  "manuscript_revision_date": "2026-10-26",
+  "arxiv_abstract_url": "https://arxiv.org/abs/2610.34892",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2610.34892",
+  "repository_documentation_checked": {
+    "README.md": {
+      "sha256": "9976d9c0bf159df9ce656f7b04c1a6f2d28bc21b7153470011069ee00016659e",
+      "paper_labels_checked": [],
+      "relative_links_checked": [
+        "certificate/main.tex",
+        "certificate/main.tex",
+        "certificate/README.md",
+        "certificate/DATA_FORMAT.md",
+        "certificate/data/",
+        "certificate/source/",
+        "certificate/results.json.xz",
+        "certificate/SHA256SUMS.json",
+        "verification/"
+      ],
+      "arxiv_links": [
+        "https://arxiv.org/abs/2610.34892",
+        "https://arxiv.org/pdf/2610.34892"
+      ]
+    },
+    "verification/README.md": {
+      "sha256": "0bc20ee670291b68b5b70d6530272271970be9941a08905f966681159a71d0e8",
+      "paper_labels_checked": [],
+      "relative_links_checked": [
+        "stored_certificate_check.json",
+        "arithmetic_check.json",
+        "engine_check.json",
+        "repository_check.json",
+        "../certificate/checks/manuscript_check.json"
+      ],
+      "arxiv_links": [
+        "https://arxiv.org/abs/2610.34892"
+      ]
+    }
+  }
 }
